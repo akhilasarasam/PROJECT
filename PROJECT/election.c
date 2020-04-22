@@ -10,7 +10,9 @@ void getLeadingCandidate();
 int v1=0, v2=0, v3=0, v4=0, error=0;
 
 void castVote(){
-int choice;    
+printf("\nYou can cast your votes 5 times\n");
+for(int i=0;i<6;i++)
+{int choice;    
 printf("\n\n Select the candidate\n\n");
 printf("\n 1. %s", c1);
 printf("\n 2. %s", c2);
@@ -32,6 +34,7 @@ switch(choice)
             
             
 }
+}
  votesCount();
 
 }
@@ -47,7 +50,7 @@ getLeadingCandidate();
 }
 
 void getLeadingCandidate(){
-    printf("\n\n  Winning candidate\n\n");
+    
     if(v1>v2 && v1>v3 && v1 >v4)
     printf("Winning candidate is %s",c1);
     else if (v2>v3 && v2>v4 && v2 >v1)
